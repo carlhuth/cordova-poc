@@ -57,7 +57,11 @@ public class MainActivity extends DroidGap implements CordovaInterface {
 		super.appView = cwv;
 		cwv.setWebViewClient(new TestWebViewClient(this,cwv));
 
-		cwv.loadUrl("http://some-url.at.some.domain");
+
+		// This is a REMOTE url, the html we are requesting looks more or less
+		// like:
+		// http://docs.phonegap.com/en/2.6.0/cordova_camera_camera.md.html#Camera
+		cwv.loadUrl("http://some-url.at.some.remote.domain/pag1.html");
 
 	}
 
