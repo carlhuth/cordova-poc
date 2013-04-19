@@ -57,7 +57,7 @@ public class MainActivity extends DroidGap implements CordovaInterface {
 		super.appView = cwv;
 		cwv.setWebViewClient(new TestWebViewClient(this,cwv));
 
-		cwv.loadUrl("http://web2.nruiz.tuenti.local/page1.html");
+		cwv.loadUrl("http://some-url.at.some.domain");
 
 	}
 
